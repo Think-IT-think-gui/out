@@ -16,11 +16,7 @@
 		<div style="text-align: center;" id="fat" class="result">
 			<img style="border-radius: 1000px;width:200px;height:200px " src="/static/media/Users/{{USER}}.jpg?={{RAND}}">
 		
-		</div>conn = sqlite3.connect(f'{BASE_DIR}/db.sqlite3')
-        c = conn.cursor()
-        c.execute(f"SELECT *  FROM Handler_User_info WHERE id='{pk}'")
-        user_info = c.fetchone()
-        conn.commit()
+		</div>
 	</div>
 	<form action="../../../Profile_Image_page/o" method="POST" enctype="multipart/form-data" >
 		{% csrf_token %}
